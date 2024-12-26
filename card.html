@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем React и ReactDOM через CDN -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <!-- Подключаем Babel для компиляции JSX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <section id="cover">
+        <div class="container">
+            <header>
+               <a href="index.html"><img class="icon" src="/img/Butterfly.svg" alt=""></a> 
+                <nav>
+                    <ul class="menu">
+                        <li class="display-font"><a class="nav_link"href="courses.html">Курсы</a></li>
+                        <li class="display-font"><a class="nav_link"href="schedule.html">Расписание</a></li>
+                        <li class="display-font"><a class="nav_link"href="record.html">Записи занятий</a></li> 
+                    </ul>
+                </nav> 
+            </header>
+        </div>
+    </section> 
+
+    <section id="course-view">
+        <div class="container">
+            <div class="image-button" onclick="goBack()">
+                <img src="/img/Back.svg" alt="Назад">
+                <h2>Назад</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="card-content">
+        <div class="container">
+            <div class="content">
+            <div class="img-button-content">
+                <img src="/img/карточка.svg" alt="">
+                <button class="card-button">Записаться</button>
+            </div>
+            <div class="text-content">
+                <h1 class="h1-card">Онлайн курс подготовки к родам</h1>
+                <p class="card-text">Этот курс поможет вам:</p>
+                <ul>
+                    <li><p>Сформировать позитивный настрой к родам.</p></li>
+                    <li><p>Научиться техникам управления болью и стрессом.</p></li>
+                    <li><p>Понять свои права и возможности в процессе родов.</p></li>
+                    <li><p>Создать команду с вашим партнером для уверенных и гармоничных родов.</p></li>
+                    <li><p>Техники дыхания и релаксации: <br>
+                    <span class="span-card">Научитесь управлять своим телом и эмоциями во время родов, 
+                        снизьте уровень стресса и сделайте роды более комфортными</span>
+                    </p></li>
+                    <li><p>Эмоциональная подготовка к родам:   <br>
+                        <span class="span-card">Разберитесь с возможными эмоциями, которые могут
+                            возникнуть во время родов, научитесь справляться с тревогой и страхом.</span>
+                        </p></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+    
+    <section id="schedules">
+        <div class="container">
+            <div class="more-schedule">
+                <h1 class="day">Понедельник</h1>
+                <div id="schedule">
+                    <div class="text">
+                        <div class="time-slot" data-start="09:00" data-end="10:00">
+                            <img src="/img/Ellipse 8.svg" alt="">
+                            <h1 class="schedule-text time">09:00</h1>
+                            <p class="contact-text schedule schedule-text">Снова папа!</p> 
+                        </div>
+                        <div class="time-slot" data-start="10:00" data-end="11:00">
+                            <img src="/img/Ellipse 8.svg" alt="">
+                            <h1 class="schedule-text time">10:00</h1>
+                            <p class="contact-text schedule schedule-text">Снова папа!</p> 
+                        </div>
+                        <div class="time-slot" data-start="11:00" data-end="12:00">
+                            <img src="/img/Ellipse 8.svg" alt="">
+                            <h1 class="schedule-text time">11:00</h1>
+                            <p class="contact-text schedule schedule-text">Снова папа!</p> 
+                        </div>
+                        <div class="time-slot" data-start="12:00" data-end="13:00">
+                            <img src="/img/Ellipse 8.svg" alt="">
+                            <h1 class="schedule-text time">12:00</h1>
+                            <p class="contact-text schedule schedule-text">Снова папа!</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer">
+            <section id="contact">
+                <div class="info-container">
+                    <div class="info">
+                        <h2>Наш адрес</h2>
+                        <p class="contact-text">1-й Вязовский проезд, 4с3</p>
+                    </div>
+                    <div class="info">
+                        <h2>Телефон</h2>
+                        <p class="contact-text">+7 999 000 11 22</p>
+                    </div>
+                </div>
+               <div class="social">
+                <img src="/img/Butterflyfooter.svg" alt="">
+                <p class="contact-text info">Если остались вопросы, ждем вас <br>
+                    в наших <span>соцсетях!</span> </p>
+                    <div class="social-icon ">
+                        <img class="network" src="/img/Telegram.svg" alt="">
+                        <img class="network" src="/img/VK Circled.svg" alt="">
+                        <img src="/img/YouTube.svg" alt="">
+                    </div>
+               </div>
+               <div class="info-container">
+                <div class="info">
+                    <h2>Почта</h2>
+                    <p class="contact-text">superpuper@moon.com</p>
+                </div>
+                <div class="info">
+                    <h2>Телефон помощи <br>
+                        женщинам и детям</h2>
+                    <p class="contact-text">+7 499 977-17-05</p>
+                </div>
+            </div>
+            </section>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
